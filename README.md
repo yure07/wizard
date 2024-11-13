@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Wizard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto teste técinco para Desenvolvedor Front-end
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Typescript
+- Tailwind
+- Prime react (InputMask)
+- React Icons
 
-## Expanding the ESLint configuration
+## Execução do projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Após certficar que possui [Node.js](https://nodejs.org/en/) e [VSCode](https://code.visualstudio.com/) instalados na sua máquina, siga os passos:
 
-- Configure the top-level `parserOptions` property like this:
+## Clone este repositório, usando cmd ou terminal
+`git clone <https://github.com/yure07/wizard.git>`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Acesse a pasta do projeto
+`cd wizard`
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Instale as dependências
+`npm install`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Execute a aplicação
+`npm run dev`
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### O servidor iniciará na porta:5173 - acesse <http://localhost:5173>
+
+## Sobre
+Em cada parte de formulário, é necessário sempre preencher os campos para poder prosseguir, caso o usuário não preencha, não conseguirá seguir. <br/>
+Aplicação responsiva. <br/>
+Mostrando o log de todos os dados inseridos pelo usuário no último formulário.
